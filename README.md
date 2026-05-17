@@ -9,13 +9,13 @@ A high-performance Nginx log parser that streams log files line-by-line and stor
 
 ## Features
 
-- 📊 **Nginx Log Parsing** - Supports standard combined log format
-- 💾 **SQLite Storage** - Lightweight database, no server setup required
-- 🚀 **Streaming I/O** - Uses Python generators (yield) for files of any size
-- 📦 **Bulk Inserts** - Efficiently saves thousands of records at once
-- 🎯 **Type Hints** - Full typing support for better IDE experience
-- 🧪 **Testing** - 81% code coverage with pytest and mocks
-- 🔧 **CLI Interface** - User-friendly command line with Typer
+- **Nginx Log Parsing** - Supports standard combined log format
+- **SQLite Storage** - Lightweight database, no server setup required
+- **Streaming I/O** - Uses Python generators (yield) for files of any size
+- **Bulk Inserts** - Efficiently saves thousands of records at once
+- **Type Hints** - Full typing support for better IDE experience
+- **Testing** - 81% code coverage with pytest and mocks
+- **CLI Interface** - User-friendly command line with Typer
 
 ## Requirements
 
