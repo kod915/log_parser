@@ -26,8 +26,8 @@ A high-performance Nginx log parser that streams log files line-by-line and stor
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/nginx-log-parser.git
-cd nginx-log-parser
+git clone https://github.com/kod915/log_parser.git
+cd log_parser
 
 # Create virtual environment
 python -m venv venv
