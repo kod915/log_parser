@@ -1,7 +1,7 @@
 # Nginx Log Parser
 
-[![CI](https://github.com/YOUR_USERNAME/nginx-log-parser/actions/workflows/ci.yaml/badge.svg)](https://github.com/YOUR_USERNAME/nginx-log-parser/actions/workflows/ci.yaml)
-[![Coverage](https://img.shields.io/badge/coverage-81%25-brightgreen)](https://github.com/YOUR_USERNAME/nginx-log-parser)
+[![CI](https://github.com/kod915/log_parser/actions/workflows/ci.yaml/badge.svg)](https://github.com/kod915/log_parser/actions/workflows/ci.yaml)
+[![Coverage](https://img.shields.io/badge/coverage-81%25-brightgreen)](https://github.com/kod915/log_parser)
 [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -40,21 +40,21 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
-
+```
 ## Usage
-
-python main.py access.log
-python main.py access.log --batch-size 500
-python main.py --help
-
-#Example 
-
+```bash
+python app.py access.log
+python app.py access.log --batch-size 500
+python app.py --help
+```
+## Example 
+```bash
 echo '127.0.0.1 - - [27/Feb/2023:01:00:19 +0000] "GET / HTTP/1.1" 200 612' > test.log
-python main.py parse test.log
-
-#Project Structure
-
-nginx-log-parser/
+python app.py test.log
+```
+## Project Structure
+```
+log_parser/
 ├── .github/workflows/ci.yaml
 ├── src/
 │   ├── core/models.py
@@ -62,17 +62,17 @@ nginx-log-parser/
 │   ├── utils/streaming.py
 │   └── storage/database.py
 ├── tests/
-├── main.py
+├── app.py
 ├── requirements.txt
 └── README.md
-
-#Running Tests
-
+```
+## Running Tests
+```bash
 pytest tests/ -v
 pytest tests/ -v --cov=src --cov-report=term
 pytest tests/ -v --cov=src --cov-report=html
-
-#Author
+```
+## Author
 
 kod915
 
